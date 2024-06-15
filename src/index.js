@@ -4,11 +4,12 @@ function displayWeather(response) {
   displayTemperature.innerHTML = `${temperatureElement}`;
   let weatherDescription = document.querySelector("#condition");
   weatherDescription.innerHTML = response.data.condition.description;
-
-  console.log(response.data);
-
   let cityElement = document.querySelector("#city-result");
   cityElement.innerHTML = response.data.city;
+  let humidityElement = document.querySelector("#humidity");
+  humidityElement.innerHTML = response.data.temperature.humidity;
+
+  console.log(response.data);
 }
 
 function searchCity(city) {
