@@ -2,6 +2,8 @@ function displayWeather(response) {
   let temperatureElement = Math.round(response.data.temperature.current);
   let displayTemperature = document.querySelector("#current-temperature");
   displayTemperature.innerHTML = `${temperatureElement}`;
+  let weatherDescription = document.querySelector("#condition");
+  weatherDescription.innerHTML = response.data.condition.description;
 
   console.log(response.data);
 
