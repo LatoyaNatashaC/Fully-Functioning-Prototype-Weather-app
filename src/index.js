@@ -1,3 +1,6 @@
+let apiKey = "4f3b0tf3219b4c7758082d0o48eabbbe";
+let apiUrl = `https://api.shecodes.io/weather/v1/current?query=${city}&key=${apiKey}&units=imperial`;
+
 function search(event) {
   event.preventDefault();
   let textInput = document.querySelector("#search-input");
