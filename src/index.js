@@ -3,6 +3,8 @@ function displayWeather(response) {
   let displayTemperature = document.querySelector("#current-temperature");
   displayTemperature.innerHTML = `${temperatureElement}`;
 
+  console.log(response.data);
+
   let cityElement = document.querySelector("#city-result");
   cityElement.innerHTML = response.data.city;
 }
