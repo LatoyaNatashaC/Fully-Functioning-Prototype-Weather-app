@@ -1,12 +1,12 @@
 function search(event) {
   event.preventDefault();
-  let textInput = document.querySelector(".search-bar");
+  let textInput = document.querySelector("#search-input");
 
-  let h1 = document.querySelector("h1");
+  let city = document.querySelector("#city-result");
   if (textInput.value) {
-    h1.innerHTML = `${textInput.value}`;
+    city.innerHTML = `${textInput.value}`;
   } else {
-    h1.innerHTML = null;
+    city.innerHTML = null;
   }
 }
 
