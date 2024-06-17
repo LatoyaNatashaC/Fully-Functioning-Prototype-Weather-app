@@ -9,8 +9,6 @@ function displayWeather(response) {
   let date = new Date(response.data.time * 1000);
   let iconElement = document.querySelector("#icon");
 
-  console.log(response);
-
   displayTemperature.innerHTML = `${temperatureElement}`;
   weatherDescription.innerHTML = response.data.condition.description;
   cityElement.innerHTML = response.data.city;
